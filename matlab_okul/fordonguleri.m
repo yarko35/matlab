@@ -13,6 +13,7 @@ end
 disp(z)
 %amaç3 matris oluşturmak  a=[1,2,3;4,5,6;7,8,9]
 k=1;
+%k için ; kullanma sebebim command window çıktısında görünmesini istemiyorum
 for i=1:1:3
     for j=1:1:3
         a(i,j)=k;%iç içe döngü olduğu için i nin 1nci değeriyle başlar arından j nin 3ncü değerine kadar bu döngü içinde kalır
