@@ -2,7 +2,7 @@ clc;
 clear;
 clear all;
 %while döngüsü
-%1 den 10 a kadar olan sayýlar 
+%x=[1,2,3,4,5,6,7,8,9,10]
 %matlabda indisler tam sayýlardan baþlar 0 dan deðil
 i=1;
 while i<=10
