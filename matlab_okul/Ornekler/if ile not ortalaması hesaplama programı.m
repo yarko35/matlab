@@ -20,6 +20,6 @@ elseif totalNot>=50
     fprintf('Harf Notunuz: D1 veya D2(%f)',totalNot)
 else
     disp('Kaldiniz.')
-    %Tukar�dakine alternatif olarak buda yaz�labilir fprintf('Kald�n�z(%f)',totalNot)
+    %yukarıdakine alternatif olarak buda yapılabilir fprintf('Kaldiniz(%f)',totalNot)
      
 end
