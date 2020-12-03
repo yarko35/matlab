@@ -4,7 +4,8 @@ clear all;
 ilac1=10;ilac2=10;ilac3=10;ilac4=10;ilac5=10;
 
 while true
-ilacIsmi=input('Istediginiz ilac firmasi adini giriniz(ilacx gibi):\n','s');
+ilacIsmi=input('Istediginiz ilac firmasi adini giriniz(cıkmak icin ctrl+c):\n','s');
+% çıkış yaptırma komutunda sıkıntı yaşadığım için onu koymadım 
 
 switch ilacIsmi
     case'ilac1'
