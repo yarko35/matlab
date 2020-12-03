@@ -16,8 +16,10 @@ elseif totalNot>=65
     frpintf('Harf notunuz: C1(%f)',totalNot)
 elseif totalNot>=60
     frpintf('Harf notunuz: C2(%f)',totalNot)
+elseif totalNot>=55
+    fprintf('Harf Notunuz: D1(%f)',totalNot)
 elseif totalNot>=50
-    fprintf('Harf Notunuz: D1 veya D2(%f)',totalNot)
+    fprintf('Harf Notunuz: D2(%f)',totalNot)
 else
     disp('Kaldiniz.')
     %yukaridakine alternatif olarak buda yazilabilir fprintf('Kaldiniz(%f)',totalNot)
