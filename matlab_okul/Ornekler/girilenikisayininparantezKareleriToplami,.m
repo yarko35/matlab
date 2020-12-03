@@ -1,7 +1,7 @@
 clc;
 clear;
 clear all;
-x=('Birinci sayýyý giriniz:');
-y=('Ýkinci sayýyý giriniz:')
+x=('Birinci sayinizi giriniz:');
+y=('Ä°kinci sayinizi giriniz:')
 z=(x*x)+(y*y)+(2*x*y);
-frpintf('Girdiðiniz sayýlarýn parantez karesi toplamý %f dir.',z)
+frpintf('Girdiï¿½iniz sayï¿½larï¿½n parantez karesi toplamï¿½ %f dir.',z)
