@@ -4,8 +4,8 @@ clear all;
 ilac1=10;ilac2=10;ilac3=10;ilac4=10;ilac5=10;
 
 while true
-ilacIsmi=input('Istediginiz ilac firmasi adini giriniz(cıkmak icin ctrl+c):\n','s');
-% çıkış yaptırma komutunda sıkıntı yaşadığım için onu koymadım 
+ilacIsmi=input('Istediginiz ilac firmasi adini giriniz(cıkmak icin q a basiniz):\n','s');
+
 
 switch ilacIsmi
     case'ilac1'
@@ -40,6 +40,9 @@ switch ilacIsmi
             dips('yeteri kadar stogunuz kalmamistir')
         end
     end
+    if ilacIsmi=='q'
+        break
+    end 
    
 end
 
