@@ -5,8 +5,6 @@ ilac1=10;ilac2=10;ilac3=10;ilac4=10;ilac5=10;
 
 while true
 ilacIsmi=input('Istediginiz ilac firmasi adini giriniz(cıkmak icin q a basiniz):\n','s');
-
-
 switch ilacIsmi
     case'ilac1'
         ilac1=ilac1-1
