@@ -19,7 +19,7 @@ elseif totalNot>=60
 elseif totalNot>=50
     fprintf('Harf Notunuz: D1 veya D2(%f)',totalNot)
 else
-    disp('Kaldýnýz.')
-    %Tukarýdakine alternatif olarak buda yazýlabilir fprintf('Kaldýnýz(%f)',totalNot)
+    disp('Kaldiniz.')
+    %Tukarï¿½dakine alternatif olarak buda yazï¿½labilir fprintf('Kaldï¿½nï¿½z(%f)',totalNot)
      
 end
