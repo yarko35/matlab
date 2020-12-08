@@ -43,5 +43,6 @@ switch ilacIsmi
     end 
    
 end
+%dipnot:if bloğundaki else switch bloğunda otherwise olarak kullanılmaktadır
 
     
