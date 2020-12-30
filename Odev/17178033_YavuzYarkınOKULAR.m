@@ -7,7 +7,7 @@ clc;clear All;clear;
 %S hassaslik anlamına gelir.Birimi V/psi olarak aldım.
 
 %----------------------------- Sabitler ----------------------------------
-S=0.00133;minVoltage=0.5;
+S=0.00133;minVo ltage=0.5;
 
 %************Rastgele sayı türetimi ve basıncın hesaplanması**************
 outputVoltage=(5-0)*rand(20,1);
