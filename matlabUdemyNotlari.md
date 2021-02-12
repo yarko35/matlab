@@ -18,8 +18,9 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 - **_format bank_**: noktadan sonra 2 basamak gösterir
 - **_format short_**(default format metodu): virgülden sonra 4 basamak kullanılır 
 - **_format long_**: virgülden sonra 15 basamak alır 
-- Yuvarlama prensibiyle çalışır format lar 
 - **_format rat_**: Kesir halinde yazmak için kullanılır. 
+- Yuvarlama prensibiyle çalışır format lar 
+
 ### Help ve Doc Kullanımı 
 - Bir fonksiyonun nasıl kullanıldığını gösterir
 - help yazdıktan sonra fonksiyonun ismi yanına yazılır
