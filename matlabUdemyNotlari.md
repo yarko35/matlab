@@ -1,4 +1,5 @@
-# Matlab Programlama Udemy Kurs Notları 
+# Matlab Programlama Udemy Kurs Notları
+Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 ## Bölüm 3
 ### Sabitler
 - ans ile işlemde yapılabilmekte 
