@@ -20,8 +20,30 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 - **_format long_**: virgülden sonra 15 basamak alır 
 - **_format rat_**: Kesir halinde yazmak için kullanılır. 
 - Yuvarlama prensibiyle çalışır format lar 
-
 ### Help ve Doc Kullanımı 
 - Bir fonksiyonun nasıl kullanıldığını gösterir
 - help yazdıktan sonra fonksiyonun ismi yanına yazılır
  - doc daha detaylı bilgi almak için kullanılır 
+## Bölüm 4 Algoritma Geliştirme
+### ALgoritma Tanımı 
+- Bir problemin çözüm aşamaları 
+- variable(değişken),function(fonksiyon),counter(sayaç-üretilen değerlerin sayılması bir örnek),conditional expressions(şartlı ifadeler),loops(döngüler)
+### Akış diyagramları
+- **Word dosyasında yazılı**
+### Problem Solving Steps (_çözüm aşamaları_)
+- Analysis
+- Algorithm 
+- Flowchart
+- Program language selection
+- Software(Kodların yazımı)
+- Compilation/Interpretation(Derleme ve Yorumlama-makine kodunna dönüştürmesi-)
+- Run(ÇAlıştırma) 
+- Testing and Debugging
+- Result(Sonuç)
+
+
+
+
+
+
+
