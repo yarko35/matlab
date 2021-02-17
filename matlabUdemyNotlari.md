@@ -40,6 +40,53 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 - Run(ÇAlıştırma) 
 - Testing and Debugging
 - Result(Sonuç)
+## Bölüm 5 Matematiksel İşlemler
+### Matematiksel Fonksiyonlar
+- **fix()** aldığı değeri 0 yönünde tam sayıya yuvarlar.
+-  **round()** kendine en yakın tam sayıya yuvarlar.0,5 ten sonrasını üste yuvarlar
+-  **ceil()** pozitif yönündeki tam sayıya yuvarlar
+-  **floor()** negatif yönündeki tam sayıya yuvarlar
+-  **mod(x,y)** bir sayının bir sayıya bölümünden kalan x in y e bölümünden kalan anlamına gelir
+-  **abs()** mutlak alır
+-  **sqrt()** karkök alır
+-  **sign()** içerisine girilen sayının pozitif mi negatif mi olduğunu gösterir
+- **rand(x,y)** rastgele sayı üretir x ve y lik bir matris üretir. Üretilen matris 0 ila 1 arasında değer alır.
+-  50*rand(1)0 ila 50 arasında bir sayı üret demiş oluyoruz
+-  10+40*rand(1) 10 ila 50 arasında rastgele bir sayı üret demiş oluyoruz.40*rand(1) dediğimizde rand içinden gelen değer max 1 olduğu için 10 la toplamı 50 i geçmez ve sayı üretimi 10 ila 50 arası olmuş olur.
+### Kompleks Sayılar
+- Bir sanal bir reel kısımdan oluşan sayılardır.
+- 2-3*i buna bir örnektir
+- **isreal()** içine yazılan değişkenin reel sayı olup olmadığını söyler
+- **complex(x,y)** 2 parametre alır x reel sayıdır y ise sanal kısmın bulunacağı değer olmuş olur
+- 5-5*i dersek 5 burda x e eşit -5 y e eşittir
+- **angle()** içine girilen değerin radyan cinsinden derece karşılığını gösterir.
+- **conj()** içine girilen fonksiyonun/değerin eşleniğini alır.
+- **imag()** içine girilen denklemde sanal kısmın bulunduğu değeri gösterir.
+- **real()** içine girilen denklemin reel kısmın bulunduğu değeri gösterir.
+- Matlabda karmaşık sayıların büyük küçük kıyaslamasında sadece reel sayılara bakarak kıyas yapar karmaşık sayının değerini 0 olarak görür
+- Eğer eşitlik anlamında kıyaslanırsa ilk önce reel kısıma bakar eşitse ardından sanal kısma bakarak değerlendirmesini yapar.
+### Trigonometrik Fonksiyonlar
+- Açı matlabda radyan cinsindendir.
+-  **sin()** içine girilen değer radyan cinsinden olmalı
+-  **cos()** içine girilen değer radyan cinsinden olmalı
+-  **tan()** içine girilen değer radyan cinsinden olmalıdır
+-  **asin(x)** sinüsü x olan açı nedir demiş oluyoruz
+-  a dan sonra hangi açı konursa radyan cinsinden açısını bulabiliriz
+-  **sec()** 1/cosx i hesaplarken kullanıyoruz.sekantx
+-  **csc()** 1/sinx i hesaplarken kullanıyoruz.kosekantx
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
