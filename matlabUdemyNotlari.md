@@ -74,8 +74,15 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 -  a dan sonra hangi açı konursa radyan cinsinden açısını bulabiliriz
 -  **sec()** 1/cosx i hesaplarken kullanıyoruz.sekantx
 -  **csc()** 1/sinx i hesaplarken kullanıyoruz.kosekantx
-
-
+### Logaritmik ve Üstel Fonksiyonlar
+- yukarı oka üsteli gösterebiliriz.
+- power(taban,üs) üs almak için kullanılan fonksiyon 
+- exp() içerisine girilen rakam e üzeri o sayı anlamına gelir 
+- log() logaritma alma fonksiyonumuzdur 
+- log10() logaritma 10 tabanında yazmak için kullanıyoruz
+- log2() logaritma 2 tabanında yazmak için kullanıyoruz
+- Tabanıda üstüde kendimiz belirlememiz gerekirse log(B)(üs olacak değer)/log(A)(taban olacak değer) gibi yazılır.
+- 
 
 
 
