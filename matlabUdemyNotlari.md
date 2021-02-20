@@ -76,14 +76,28 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 -  **csc()** 1/sinx i hesaplarken kullanıyoruz.kosekantx
 ### Logaritmik ve Üstel Fonksiyonlar
 - yukarı oka üsteli gösterebiliriz.
-- power(taban,üs) üs almak için kullanılan fonksiyon 
-- exp() içerisine girilen rakam e üzeri o sayı anlamına gelir 
-- log() logaritma alma fonksiyonumuzdur 
-- log10() logaritma 10 tabanında yazmak için kullanıyoruz
-- log2() logaritma 2 tabanında yazmak için kullanıyoruz
+- **power**(taban,üs) üs almak için kullanılan fonksiyon 
+- **exp()** içerisine girilen rakam e üzeri o sayı anlamına gelir 
+- **log()** logaritma alma fonksiyonumuzdur 
+- **log10()** logaritma 10 tabanında yazmak için kullanıyoruz
+- **log2()** logaritma 2 tabanında yazmak için kullanıyoruz
 - Tabanıda üstüde kendimiz belirlememiz gerekirse log(B)(üs olacak değer)/log(A)(taban olacak değer) gibi yazılır.
+### Polinomlar(SIKINTILI KONU TEKRAR ÇALIŞILMASI GERKEBİLİR)
+- İlk olarak değişken değeri tanımlanır 
+- Hesaplanması gereken denklemi yazdıktan sonra ikinci bir variable tanımlayıp içine bilinmeyenlerin kat sayısı büyükten küçüğe olacak şekilde yazılır
+- pol_1=[7 0 -3 1 5]
+- Denklemlerin derecelerinin büyükten küçüğe olmasıyla yazılır.x üzeri 4 ün katsayısı 7 ise ilk o yazılır gibi.
+- Önce polinom yazılır sonra bilinmeyen değişkenlerin değerleri girilir.
+- **polyval(pol_1,xyerineyazılacak değer)** ilk yazılacak katsayılar olmalı ikincisi de bilinmeyen yerine yazılacak değer demektir.
+- **roots(pol_1)** polinomun köklerini bulmada kullanılır 
+- **poly([1ncikök 2ncikök])** polinomun katsayılarını bulmada kullanılır.İçerisine parametre olarak kökleri alır.
+- **conv(pol_1,pol_2)** polinomların çarpımında kullanılır. Çıktı sonucu soldan sağa x in en yüksek katsayısından düşüğe gidicek şekildedir. x üzeri7 den x üzeri 0 a gibi.
+- **deconv(denklemdedercesi büyük olan,denklemde dercesi küçük olan)** polinomları bölmede kullanılır.
+- Polinomların toplanmasında dikkat edilecek husus polinomların dercesi aynı mı değil mi 
+- Dereceler aynı değilse "matrix dimensions must agree" hatası alırız.
+- **polyder(pol_1)** polinomun türevini almada kullanılır.Çıktı olarak katsayılar matrisi verir.
+- polyder içerisine iki tane polinom girilirse çarpımının türevini alır. 
 - 
-
 
 
 
