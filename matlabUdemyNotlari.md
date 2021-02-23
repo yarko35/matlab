@@ -97,8 +97,23 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 - Dereceler aynı değilse "matrix dimensions must agree" hatası alırız.
 - **polyder(pol_1)** polinomun türevini almada kullanılır.Çıktı olarak katsayılar matrisi verir.
 - polyder içerisine iki tane polinom girilirse çarpımının türevini alır. 
-- 
-
+## Bölüm 6
+### Matris Tanımlama
+- matristanımlama=[1 2 3] _satır matrisi veya vektör matrisi denir_
+- Diğer satılarlar tanımlanırken ; kullanılır
+- Matris tanımlamak için köşeli parantez şart
+- String matriside oluşturulabilir:
+- karaktermatris=['yavuz','yarkın','okular'] _karakter matrisi bu şekilde tanımlanır_
+- Çok çok fazla matrisi tanımlamak gerekirse fazlamatris =baslangicdegeri(0gibi):artismiktrari(5 gibi):sondeger(25gibi)
+- **linspace(x,y,z)** x baslangic degeri y son deger z ise araya kaç tane matris elemanı koyulacağı
+- **zeros(x,y)**
+- **ones(x,y)**
+- **eye(x)** birim matrisi üretir x*x lik 
+- **pascal(4)** 4 e 4 lük pascal üçgeninen oluşan bir matris üretmede kullanılır
+- **magic(x)** x*x lik matris üretir.Satır elemanlarının toplamı ile sütun elemanlarının toplamının eşit olduğu bir matris üretir.Çarprazında toplamı aynıdır
+- **hilb(x)** x*x lik bir matris üretir.1/(i+j-1)i j dediğimiz satır ve sütunun indis değeridir.i j değerine göre matris elemanları oluşturulur.Matris boyutuna göre sayılar üretilir.
+- **bosmatris=[]** Boş matris üretme. 
+- Null ile boş un farkı: Boş bir banka hesabının olup bakiyenin olmaması null ise bir banka hesabınında olmamasıdır.
 
 
 
