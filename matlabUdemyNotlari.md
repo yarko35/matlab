@@ -1,5 +1,27 @@
 # Matlab Programlama Udemy Kurs Notları
 Okul haricinde matlabla ilgili tüm detaylar burada barınacak
+# Matematiksel operatörler
+- 4^3; 4 üssü 3 anlamına gelir
+- **mod(10,3)** %10 un 3 e bölümünden kalanı verir
+- **sqrt()** içerisine yazılan değerlerle kök alınır
+- üs alınırken soldan sağa önceliği vardır
+# Matematiksel Karşılaştırma Operatörleri
+- True ise 1 false ise 0 değeri döndürür karşılaştırma yaparken
+- ~= eşit değil midir demiş oluyoruz eşit eşitin tam tersi
+# Matematiksel Karşılaştırma Fonksiyonları
+- **eq(x,y)** x y e eşit midir demiş oluyoruz hazır bir fonksiyondur
+- **ne(x,y)** x y e eşit değil midir demiş oluyoruz
+- **gt(x,y)** x y den büyük müdür
+- **ge(x,y)** x y den büyük eşit midir demiş oluyoruz
+- **lt(x,y)** x y den küçük eşit midir
+# Mantıksal Operatörler
+- & ve operatörü herhangi bir değer false dönerse cevap false
+- | veya operatörü herhangi bir değer false dönse bile cevap true çıkar
+- ~ mantıksal olmayan operatör(değil) çıkan cevabın tersini alır
+- **xor(karşılaştırılmak istenen değerler1,karşılaştırılmak istenen değerler2)** iki ifade birbirinden farklı değerler ise 1 döner
+- **and(x,y)** %ve operatörüyle aynı işlevi görür.max 2 değer alır
+- **or(x,y)** %veya operatörüyle aynı işi görür
+- double & kullanılırsa ya da | ilk değere bakar ilk değer sonucu verirse ikinciye bakmaz
 ## Bölüm 3
 ### Sabitler
 - **ans** ile işlemde yapılabilmekte 
