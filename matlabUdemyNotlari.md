@@ -136,6 +136,52 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 - **hilb(x)** x*x lik bir matris üretir.1/(i+j-1)i j dediğimiz satır ve sütunun indis değeridir.i j değerine göre matris elemanları oluşturulur.Matris boyutuna göre sayılar üretilir.
 - **bosmatris=[]** Boş matris üretme. 
 - Null ile boş un farkı: Boş bir banka hesabının olup bakiyenin olmaması null ise bir banka hesabınında olmamasıdır.
+### Matrisde İşlemler-1
+- Toplama esnasında bir matrisle diğer matrisin ilk elemanı toplanır yani 1.satır 1.sütun şeklinde gerçekleşir
+- Matris satır sütun boyutları aynı değilse toplarken hata alırsın 
+- Çarpma bölme ve transpoz(tersini alma) esnasında ilk önce . ardından işlem operatörü gelir. Yani .* gibi çarpma için.
+- Standart bölme yaparsak ./ soldan sağa bölme uygular ama tersine taksim kullanırsak .\ sağdan sola bölme yapar.Sağdan soladan kasıt bölme işleminde yazdığımız sıra
+- yani bölerken m1 /.m2 dersek matematikte m1/m2 olarak yapar
+- Bir matriste üs alma işlemi yaparken . kullanmak zorunludur. m1.^3 gibi.
+- Transpoz işlemi yapmak istersek. M1' olarak transpozunu almak mümkün.
+- Determinant işleminde **det(degisken_matrisİsmi)** komutu kullanılır
+- **rank(degisken_matrisİsmi)**. Bir matrisin rankını alır.Bir A matrisinin kare alt matrislerinden determinantı sıfırdan farklı olan ve türü en büyük olanın türüne A matrisinin rankı denir.
+- **length(degisken_matrisİsmi)**. Bir matrisin uzunluğunu bulur. Yani eleman sayısını.
+- **size(degisken_matrisİsmi)**. Bir matrisin boyurlarını gösterir. 1 satır 3 sütun(1*3)gibi.
+- **diag(degisken_matrisİsmi)**.Bir matrisin köşegeninin öğrenirken kullanılır.Yani kare matrisin sol üst köşesiyle sağ alt köşesi arasındaki elemanlardır.
+### Matrisde İşlemler-2
+- **max(degisken_matrisİsmi)**. Matristeki en büyük rakamı gösterir.
+-  Çok boyutlu dizide bir satır içerisinde en büyük elemanların olduğu satırı getirir.Eğerki biz direkt olarak matristeki en büyük sayıyı bulmak istiyorsak max(max(degisken_matrisİsmi)) yazmalıyız.
+-  Çok boyutlu bir dizide length() kullanılırsa matrisin en büyük sütun sayısını getirir. Yani bir matris 3 e 9 sa bize 9 değerini gösterir.
+-  sum() komutuyla toplama yaparken en büyük vektörü toplar ama bu çok boyutlu bir diziyse her sütunu ayrı ayrı toplayıp yazar. Çünkü her sütun kendi başına bir vektördür.
+-  Çok boyutlu bir dizide tüm elemanların toplamını bulmak istersek max da kullandığımız gibi iç içe yazmalıyız.sum(sum(degisken_matrisİsmi)) gibi.
+-  **prod(degisken_matrisİsmi)** elemanların çarpımını verir. Çok boyutlu dizide kullanılırsa sütunların çarpımını verir yine.
+-  **median(degisken_matrisİsmi)** bir dizideki ortanca elemanı verir. Rastgele diziyi büyükten küçüğe sıralar bunun ortasındaki elemanı alır.
+-  **sort(degisken_matrisİsmi)** küçükten büyüğe sıralama yapar.
+-  Eğer eleman sayısı çift sayıysa ortada kalan 2 sayıyı alıp aritmetik ortalamaya sokar ve ortancasını öyle bulur.**median()** fonksiyonu.
+-  **std(degisken_matrisİsmi)** standart sapma bulurken kullanılır.
+-  **mean(degisken_matrisİsmi)** aritmetik ortalamayı verir.
+-  mean fonksiyonunu unutursak. **sum(degisken_matrisİsmi)/length(degisken_matrisİsmi)** yapılabilir.
+-  **geomean(degisken_matrisİsmi)** geometrik ortalama hesaplamada kullanılır. Negatif sayı barındırıyorsa matris hata verir kök alma işlemi bulunduğu için.
+-  **harmean(degisken_matrisİsmi)** harmonik ortalama bulurken kullanılır. 
+-  **[v,d]=eig(degisken_karematrisİsmi)** öz vektörleri bulmada kullanılır.Kare matris olması zorunludur.
+-  v öz değerkeri verir d öz vektörleri verir.
+### Matrisde İşlemler-3
+- Matristeki elemanlara hükmetme aşaması.
+- Matrsiteki herhangi bir elemanı gösterme: **matrisinismi(bulunduğusatır,bulunduğusütun)**
+- Index olarak yazılmalıdır unutlmamalı._**Matlabda indexler 0 dan değil 1 den başlar**_
+- Eğer bir sütunun tamamı alınmak istenirse: **matrisinismi(:,sütunNumarası)**
+- Satırın tamamı alınmak istendiğinde tersi kullanılır. 
+- Aralık olarak seçim yapılması gerekirse: **matrisinismi(satırNo,başlangıçSütunNo:bitişSütunNo)
+- Satır için aralık belirtmek istersek bunun tam tersini kullanırız.
+- Bir matriste eleman değişikliği yapma: **matrisinismi(degistirilecekelemanınSatırNo,degistirilecekelemanınSütunNo) = istediğimiDeger** _herhangi bir parantez yok_
+- Matriste eleman silme(boyutunu bilmediğimi varsayıyorum ve son elemanı sileceğimi varsayıyorum yine):**matrisinismi(length(matrisinismi))=[]**
+- Program uzunluğu tek bir vektör olarak yazıyor önce eşitliğin diğer tarafına bıraktığımız boş köşeli parantezde silme işlemi yapıyor.
+- Tek boyutlu matrisde temel silme işlemi: **matrisinismi(indeksi)=[]**
+
+
+
+
 
 
 
