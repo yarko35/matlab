@@ -178,6 +178,13 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 - Matriste eleman silme(boyutunu bilmediğimi varsayıyorum ve son elemanı sileceğimi varsayıyorum yine):**matrisinismi(length(matrisinismi))=[]**
 - Program uzunluğu tek bir vektör olarak yazıyor önce eşitliğin diğer tarafına bıraktığımız boş köşeli parantezde silme işlemi yapıyor.
 - Tek boyutlu matrisde temel silme işlemi: **matrisinismi(indeksi)=[]**
+- Sütun bazlı silme: **matrisinismi(:,1:3)=[]**
+- Ekleme işlemi yaparken boyutların birbirine uyumlu olması gerekir 
+- Diyelim ki a matrisi 3 sütun c matrisi 2 sütun c yi a ile ekleyebilmem için c nin transpozunu almalıyım.Transpozunu alınca c 2 sütun yerine 2 satıra dönecek.
+- c' dediğim zaman c nin transpozunu almış olurum.
+- Koşullar doğruysa(sütun sayıları aynıysa) ekleme işlemi: yeniMatrisİsmi=[a,c']
+- **fliplr(matrisismi)** bu matrisi aynalar sağdan sola yazar 3 ncü sutun 1 nci sütun haline gelir.
+- **flipud(matrisismi)** satırları aynalar ilk satır son satır haline gelir mesela.
 
 
 
