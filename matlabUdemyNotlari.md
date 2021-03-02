@@ -185,7 +185,39 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 - Koşullar doğruysa(sütun sayıları aynıysa) ekleme işlemi: yeniMatrisİsmi=[a,c']
 - **fliplr(matrisismi)** bu matrisi aynalar sağdan sola yazar 3 ncü sutun 1 nci sütun haline gelir.
 - **flipud(matrisismi)** satırları aynalar ilk satır son satır haline gelir mesela.
-
+### Karakter dizileri ve stringler
+- Matlabda string tanımlanırken tek tırnakla tanımlanır.
+**_Tek boyutlu karakter dizini_**
+- stringExam='yarkoZe35'
+- stringtoDouble=double(stringExam) karakterleri sayısal değerler cinsinden gösterir.Sayısal kod olarak
+- reString=char(stringtoDouble) ile de sayısal kod olan karakterleri tekrar stringe çevirebiliriz
+- whos yazılıp enterlandığında(command window) workspace hakkında detaylı bilgi verir
+- clear All workspace de dahil temizler
+- variableStringfirst='Matlab lessons'
+- size(variableStringfirst) karakter dizisinin boyutunu gösterir boşlukta dahil sayar
+- Karakter dizisinden bir veri çekilmesi istenirse-- firstLetter=variableStringFirst(çekilmek istenen karakterin indeksi)
+- Belirli bir aralıkta karakter alınması istenirse--- medLetter=variableStringfirst(2:8) şeklinde kullanılır
+- sort methodu burda da kullanılabilir.İlk olarak karakter dizisindeki büyük harfler küçük olarak sıralanır sonrasında küçük harfler alfabetik olarak sıralanır.
+- fliplr nethodu burda da sondan başa doğru yazar
+**_ Çok boyutlu karakter dizini_**
+- strcat(x,y,z) yazılmak istenen string ifadeler içerisine yerleştirilirse yan yana tek cümle gibi yaz
+- strvcat(x,y,z)yazılmak istenen string ifadeler yazılınca alt alta yazar
+- strcmp(txt1,txt2) iki string ifadeyi karşılaştırırken kullanılır. Doğruysa 1,0 sa yanlış değer anlamına gelen değer döndürmesi yapar
+- Anlam olarak aynı olsa bile iki string dizini büyük küçük harf duyarlılığından yanlış değeri döndürür
+-  strmcpi(txt1,txt2)yazdığımızda büyük küçük hasrf duyarlılığı ortadan kalkarak değerlendirme yapar
+-  Belirli bir sayıda karakter karşılaştırması yapmak istiyorsak strncmp(txt1,txt3,6) yazdığımızda 1 ila 6 a kadar olan harfleri karşılaştırır
+-  Büyük harf duyarlılığını kaldırmak içğn komutun sonuna -i eki getirilir.
+-  Klasik eşitleme kontrolü yapmak istersek bize indeks indeks doğru yanlış şekilde çıktı verir txt1==txt2 şeklinden bahsediyorum.
+-  Kullanıcından girdi istediğimizde sayı girebilir bunun doğruluğunu kontrol etmek için isletter(txt1)fonksiyonunu kulllanabiliriz. Bu fonksiyon yine indeks indeks yanlışı bize söyler.
+-  Karakter dizinindeki boşlukları bulmak içinde isspace(txt1)fonksiyonu kullanılır. Buda yine indeks indeks doğru olanları 1 şeklinde değer döndürecektir karakter dizininde boşluk varsa
+-  upper(txt1) girilen tüm değerleri büyük harf yapar.
+-  lower(txt1) girilen tüm değerleri küçük harf yapar.
+-  Integer bir değeri string olarak kullanmak için. int2str(numberVariable) yaptığımızda girilen sayı artık bir string olmuş olur.
+-  Workspace den veri istediğimizda class olarak char gözüküyorsa karakter(string) olur double olarak gözüküyorsa(sayı)olur
+-  Double bir değer string olarak kullanılmak istenirse yine int2str kullanılır ama girilen double değişkenini ıntegera çevirerek tutar
+-  Eğerki bir sayının karakter mi sayı dizini mi olduğunu basitçe anlamak istiyorsak. Komut ekranında baş kısımdan boşluk veriyorsa o sayı dizisidir eğer boşluk yoksa string ifadedir.
+-  Bir string ifadeyi sayılsal değere çevirme str2num() fonksiyonuyla gerçekleşir.
+-  
 
 
 
