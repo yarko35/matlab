@@ -22,7 +22,7 @@ function varargout = untitled2(varargin)
 
 % Edit the above text to modify the response to help untitled2
 
-% Last Modified by GUIDE v2.5 04-Mar-2021 12:07:02
+% Last Modified by GUIDE v2.5 04-Mar-2021 12:21:22
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -75,9 +75,12 @@ varargout{1} = handles.output;
 
 % --- Executes on button press in calculate.
 function calculate_Callback(hObject, eventdata, handles)
-voltage=get(handles.volt);
-ohmDeger=get(handles.ohm);
-idealwatt=(voltage*voltage)/ohmDeger
+voltage=str2double(get(handles.volt,'String'));
+ohmDeger=str2double(get(handles.ohm,'String'));
+wattage=(voltage*voltage)/ohmDeger
+set(handles.result,'String',wattage)
+
+
 
 
 
@@ -220,6 +223,24 @@ if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgr
 end
 
 
+
+function result_Callback(hObject, eventdata, handles)
+% hObject    handle to result (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of result as text
+%        str2double(get(hObject,'String')) returns contents of result as a double
+
+
 % --- Executes during object creation, after setting all properties.
 function result_CreateFcn(hObject, eventdata, handles)
-set(handles.)
+% hObject    handle to result (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
