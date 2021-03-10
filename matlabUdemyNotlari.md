@@ -230,8 +230,9 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 - Tam sayılarda : %d 
 - Karakter gösterme: %c
 - Ondaklıklı sayı gösterme: %f (floattan gelir)
-
-
+### Örnekler 
+- radyanDönüsümFormül=(pi/180)x kullanicininGirdigi_aci
+- Yada dönüştürmekle uğraşmak istemiyorsak bulmak istediğimiz açı türünün sonuna d eklenir: sind()gibi
 
 
 
