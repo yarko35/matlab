@@ -217,20 +217,19 @@ Okul haricinde matlabla ilgili tüm detaylar burada barınacak
 -  Double bir değer string olarak kullanılmak istenirse yine int2str kullanılır ama girilen double değişkenini ıntegera çevirerek tutar
 -  Eğerki bir sayının karakter mi sayı dizini mi olduğunu basitçe anlamak istiyorsak. Komut ekranında baş kısımdan boşluk veriyorsa o sayı dizisidir eğer boşluk yoksa string ifadedir.
 -  Bir string ifadeyi sayılsal değere çevirme str2num() fonksiyonuyla gerçekleşir.
--  
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Bölüm 7 / mfile editör kullanıcı ile veri alışverişi
+- Disp ve frpintf komutları işlendi. 
+### disp()
+- İŞçerisinde 'Yavuz yarkın okular' diye yazdığımızda /n yaparsak alt satırda yazar /t yaparsak bir tab lık boşluk bırakır.
+- İçerisinde stringle beraber sayısal bir değişken barınacaksa mun2str()ile sayısal değişkeni stringe çevirmemiz gerekir. 
+### fprintf()
+- Kullanıcıya sayı ve stringi kombine olarak göstermek istediğimizde iyi bir alternatiftir.
+- frpintf('Kullanicinin ismi: %s Kullanicinin okul numarasi: %d',kullanici_isim,kullaniciYas)
+- Yüzdelerin yeri önemlidir yüzde neredeyse sayısal değişkeni veya stringi oraya ekler
+- String ifadelerde: %s 
+- Tam sayılarda : %d 
+- Karakter gösterme: %c
+- Ondaklıklı sayı gösterme: %f (floattan gelir)
 
 
 
